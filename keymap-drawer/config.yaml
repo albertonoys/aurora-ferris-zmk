@@ -58,10 +58,13 @@ parse_config:
     RGUI: GUI
     LSHFT: Shift
     RSHFT: Shift
+    # LSHFT: ⇧
+    # RSHFT: ⇧
     ESC: Esc
     SPACE: ␣
     BSPC: ⌫
-    RET: ⏎
+    # RET: ⏎
+    RET: ⮐
     TAB: ↹
     DEL: ⌦
 
@@ -159,5 +162,5 @@ draw_config:
   glyph_shifted_size: 10
   combo_w: 26
   combo_h: 24
-  svg_extra_style: 'svg.keymap{font-size: 18px;}'
+  svg_extra_style: 'svg.keymap{font-size: 17px;}'
   shrink_wide_legends: 4

@@ -30,11 +30,11 @@ layers:
   - {t: H, h: Ctrl}
   - {t: ',', h: GUI}
   - {t: ., h: Alt}
-  - {t: ⏎, h: /}
+  - {t: ⮐, h: /}
   - {t: ↹, h: sym}
   - {t: ⌫, h: sym}
   - {t: ␣, h: Shift}
-  - {t: ⏎, h: nav}
+  - {t: ⮐, h: nav}
   sym:
   - '!'
   - '@'
