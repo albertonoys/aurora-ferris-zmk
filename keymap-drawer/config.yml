@@ -170,5 +170,5 @@ parse_config:
     UNDERSCORE: _
 draw_config:
   footer_text: 'Created with <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a>'
-  dark_mode: auto
+  dark_mode: off
   separate_combo_diagrams: true
