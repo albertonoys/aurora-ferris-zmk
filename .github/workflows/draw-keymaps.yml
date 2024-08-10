@@ -6,7 +6,7 @@ on:
       - "config/*.keymap"
       - "keymap-drawer/config.yaml"
       - ".github/workflows/draw-keymaps.yml"
-      # - "boards/*/*/*.keymap"
+      - "boards/shields/*/*.keymap"
 
 jobs:
   draw:
