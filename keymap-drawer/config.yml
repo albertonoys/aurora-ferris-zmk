@@ -171,3 +171,4 @@ parse_config:
 draw_config:
   footer_text: 'Created with <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a>'
   dark_mode: auto
+  separate_combo_diagrams: true
