@@ -23,18 +23,18 @@ layers:
   - O
   - Z
   - {t: X, h: Alt}
-  - {t: C, h: Gui}
+  - {t: C, h: GUI}
   - {t: D, h: Ctrl}
   - V
   - K
   - {t: H, h: Ctrl}
-  - {t: ',', h: Gui}
+  - {t: ',', h: GUI}
   - {t: ., h: Alt}
   - {t: ⏎, h: /}
   - {t: ↹, h: sym}
-  - {t: BACKSPACE, h: sym}
+  - {t: ⌫, h: sym}
   - {t: ␣, h: Shift}
-  - {t: ENTER, h: NAV}
+  - {t: ENT, h: nav}
   sym:
   - '!'
   - '@'
@@ -55,8 +55,8 @@ layers:
   - '='
   - '['
   - ']'
-  - BACKSPACE
-  - LEFT SHIFT
+  - ⌫
+  - Shift
   - +
   - '{'
   - '}'
@@ -67,10 +67,10 @@ layers:
   - ↑
   - →
   - {t: extra, type: held}
-  - LEFT CONTROL
+  - Ctrl
   - ␣
   - sym
-  NAV:
+  nav:
   - '1'
   - '2'
   - '3'
@@ -82,7 +82,7 @@ layers:
   - '9'
   - '0'
   - ↹
-  - LEFT CONTROL
+  - Ctrl
   - '"'
   - '|'
   - '#'
@@ -90,8 +90,8 @@ layers:
   - '='
   - '['
   - ']'
-  - DELETE
-  - ESCAPE
+  - ⌦
+  - Esc
   - '~'
   - \
   - '#'
@@ -100,10 +100,10 @@ layers:
   - '`'
   - '['
   - ']'
-  - DELETE
-  - NAV
-  - LEFT GUI
-  - RIGHT GUI
+  - ⌦
+  - nav
+  - GUI
+  - GUI
   - {t: sym, type: held}
   extra:
   - '1'
@@ -122,8 +122,8 @@ layers:
   - F4
   - F5
   - {t: ▽, type: trans}
-  - PAGE UP
-  - VOLUME UP
+  - Page Up
+  - Vol Up
   - MUTE
   - {t: ▽, type: trans}
   - BT CLR
@@ -132,8 +132,8 @@ layers:
   - F6
   - F7
   - {t: ▽, type: trans}
-  - PAGE DOWN
-  - VOLUME DOWN
+  - PG DOWN
+  - Vol Down
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -150,6 +150,6 @@ combos:
 - p: [11, 12]
   k: Alt
 - p: [12, 13]
-  k: Gui
+  k: GUI
 - p: [17, 18]
-  k: Gui
+  k: GUI
