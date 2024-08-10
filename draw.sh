@@ -8,8 +8,8 @@ generate_svg_for_keymap() {
     local output_svg="keymap-drawer/${keymap_name}.svg"
 
     # Parse the keymap file and create SVG
-    keymap --config "keymap-drawer/config.yml" parse -z $keymap_file -o $output_yaml &&
-    keymap --config "keymap-drawer/config.yml" draw $output_yaml -o $output_svg
+    keymap --config "keymap-drawer/config.yaml" parse -z $keymap_file -o $output_yaml &&
+    keymap --config "keymap-drawer/config.yaml" draw $output_yaml -o $output_svg
 
     echo "SVG generated: $output_svg"
 }
