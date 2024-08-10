@@ -170,5 +170,5 @@ parse_config:
     UNDERSCORE: _
 
 draw_config:
-  dark_mode: off
+  dark_mode: auto
   separate_combo_diagrams: true
