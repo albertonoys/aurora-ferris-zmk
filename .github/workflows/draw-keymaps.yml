@@ -4,7 +4,7 @@ on:
   push: # automatically run on changes to following paths
     paths:
       - "config/*.keymap"
-      - "keymap-drawer/config.yaml"
+      - "keymap-drawer/config.yml"
       - ".github/workflows/draw-keymaps.yml"
       # - "boards/shields/*/*.keymap"
 
