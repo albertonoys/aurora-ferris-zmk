@@ -1,0 +1,190 @@
+layout: {qmk_keyboard: ferris_rotated}
+layers:
+  home:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - O
+  - ''''
+  - A
+  - R
+  - S
+  - T
+  - G
+  - M
+  - N
+  - E
+  - I
+  - O
+  - Z
+  - {t: X, h: LALT}
+  - {t: C, h: LGUI}
+  - {t: D, h: LCTRL}
+  - V
+  - K
+  - {t: H, h: LCTRL}
+  - {t: ',', h: LGUI}
+  - {t: ., h: LALT}
+  - {t: RET, h: /}
+  - {t: TAB, h: sym}
+  - {t: BACKSPACE, h: sym}
+  - {t: SPACE, h: LSHFT}
+  - {t: ENTER, h: NAV}
+  sym:
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - '#'
+  - '?'
+  - /
+  - ':'
+  - ;
+  - '-'
+  - '='
+  - '['
+  - ']'
+  - BACKSPACE
+  - LEFT SHIFT
+  - +
+  - '{'
+  - '}'
+  - \
+  - _
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - {t: extra, type: held}
+  - LEFT CONTROL
+  - SPACE
+  - sym
+  NAV:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - TAB
+  - LEFT CONTROL
+  - '"'
+  - '|'
+  - '#'
+  - '-'
+  - '='
+  - '['
+  - ']'
+  - DELETE
+  - ESCAPE
+  - '~'
+  - \
+  - '#'
+  - '~'
+  - '-'
+  - '`'
+  - '['
+  - ']'
+  - DELETE
+  - NAV
+  - LEFT GUI
+  - RIGHT GUI
+  - {t: sym, type: held}
+  extra:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - {t: ▽, type: trans}
+  - PAGE UP
+  - VOLUME UP
+  - MUTE
+  - {t: ▽, type: trans}
+  - BT CLEAR
+  - BT NEXT
+  - BT PREV
+  - F6
+  - F7
+  - {t: ▽, type: trans}
+  - PAGE DOWN
+  - VOLUME DOWN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  default_first:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ''''
+  - {t: Z, h: LEFT SHIFT}
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - {t: ENTER, h: LEFT SHIFT}
+  - sym
+  - LEFT CONTROL
+  - SPACE
+  - NAV
+combos:
+- p: [0, 1]
+  k: ESC
+- p: [10, 11]
+  k: TAB
+- p: [17, 16]
+  k: RALT
+- p: [11, 12]
+  k: LALT
+- p: [12, 13]
+  k: LGUI
+- p: [17, 18]
+  k: RGUI
