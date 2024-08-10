@@ -34,7 +34,7 @@ layers:
   - {t: ↹, h: sym}
   - {t: ⌫, h: sym}
   - {t: ␣, h: Shift}
-  - {t: ENT, h: nav}
+  - {t: ⏎, h: nav}
   sym:
   - '!'
   - '@'
@@ -124,7 +124,7 @@ layers:
   - {t: ▽, type: trans}
   - Page Up
   - Vol Up
-  - MUTE
+  - $$mdi:volume-mute$$
   - {t: ▽, type: trans}
   - BT CLR
   - BT NXT
