@@ -126,9 +126,9 @@ layers:
   - VOLUME UP
   - MUTE
   - {t: ▽, type: trans}
-  - BT CLEAR
-  - BT NEXT
-  - BT PREV
+  - BT CLR
+  - BT NXT
+  - BT PRV
   - F6
   - F7
   - {t: ▽, type: trans}
