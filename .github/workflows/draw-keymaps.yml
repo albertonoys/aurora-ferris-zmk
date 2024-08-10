@@ -14,6 +14,6 @@ jobs:
       contents: write
     with:
       keymap_patterns: 'config/*.keymap'
-      config_path: keymap_drawer/config.yaml
-      output_folder: "keymap-drawer"
+      config_path: keymap-drawer/config.yaml
+      output_folder: keymap-drawer
       amend_commit: true

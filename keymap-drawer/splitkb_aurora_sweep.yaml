@@ -22,18 +22,18 @@ layers:
   - I
   - O
   - Z
-  - {t: X, h: LALT}
-  - {t: C, h: LGUI}
-  - {t: D, h: LCTRL}
+  - {t: X, h: Alt}
+  - {t: C, h: Gui}
+  - {t: D, h: Ctrl}
   - V
   - K
-  - {t: H, h: LCTRL}
-  - {t: ',', h: LGUI}
-  - {t: ., h: LALT}
-  - {t: RET, h: /}
-  - {t: TAB, h: sym}
+  - {t: H, h: Ctrl}
+  - {t: ',', h: Gui}
+  - {t: ., h: Alt}
+  - {t: ⏎, h: /}
+  - {t: ↹, h: sym}
   - {t: BACKSPACE, h: sym}
-  - {t: SPACE, h: LSHFT}
+  - {t: ␣, h: Shift}
   - {t: ENTER, h: NAV}
   sym:
   - '!'
@@ -62,13 +62,13 @@ layers:
   - '}'
   - \
   - _
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
+  - ←
+  - ↓
+  - ↑
+  - →
   - {t: extra, type: held}
   - LEFT CONTROL
-  - SPACE
+  - ␣
   - sym
   NAV:
   - '1'
@@ -81,7 +81,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - TAB
+  - ↹
   - LEFT CONTROL
   - '"'
   - '|'
@@ -142,14 +142,14 @@ layers:
   - {t: ▽, type: trans}
 combos:
 - p: [0, 1]
-  k: ESC
+  k: Esc
 - p: [10, 11]
-  k: TAB
+  k: ↹
 - p: [17, 16]
-  k: RALT
+  k: Alt
 - p: [11, 12]
-  k: LALT
+  k: Alt
 - p: [12, 13]
-  k: LGUI
+  k: Gui
 - p: [17, 18]
-  k: RGUI
+  k: Gui
