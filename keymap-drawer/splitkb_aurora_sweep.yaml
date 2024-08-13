@@ -136,7 +136,7 @@ layers:
   - RGB BRD
   - RGB SPD
   - '&bl BL_DEC'
-  - {t: ▽, type: trans}
+  - {t: home, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
