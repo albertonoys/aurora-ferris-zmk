@@ -34,7 +34,7 @@ layers:
   - {t: ↹, h: sym}
   - {t: ⌫, h: sym}
   - {t: ␣, h: Shift}
-  - {t: ⮐, h: nav}
+  - {t: sym, h: toggle}
   sym:
   - '!'
   - '@'
@@ -66,10 +66,10 @@ layers:
   - ↓
   - ↑
   - →
-  - {t: extra, type: held}
+  - {t: home, h: toggle, type: held}
   - Ctrl
   - ␣
-  - sym
+  - {t: nav, h: toggle}
   nav:
   - '1'
   - '2'
@@ -101,42 +101,42 @@ layers:
   - '['
   - ']'
   - ⌦
-  - nav
+  - {t: home, h: toggle}
   - GUI
   - GUI
-  - {t: sym, type: held}
+  - {t: extra, h: toggle}
   extra:
   - '1'
   - '2'
   - '3'
   - '4'
   - '5'
+  - RGB TOG
+  - RGB EFF
+  - RGB EFR
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&bl BL_TOG'
   - F1
   - F2
   - F3
   - F4
   - F5
-  - {t: ▽, type: trans}
-  - Page Up
-  - Vol Up
-  - $$mdi:volume-mute$$
-  - {t: ▽, type: trans}
+  - RGB HUI
+  - RGB SAI
+  - RGB BRI
+  - RGB SPI
+  - '&bl BL_INC'
   - BT CLR
   - BT NXT
   - BT PRV
-  - F6
+  - {t: ▽, type: trans}
   - F7
+  - RGB HUD
+  - RGB SAD
+  - RGB BRD
+  - RGB SPD
+  - '&bl BL_DEC'
   - {t: ▽, type: trans}
-  - PG DOWN
-  - Vol Down
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
