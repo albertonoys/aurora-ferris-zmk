@@ -9,7 +9,7 @@ layers:
   - J
   - L
   - U
-  - O
+  - Y
   - ''''
   - A
   - R
@@ -141,9 +141,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [0, 1]
+- p: [1, 2]
   k: Esc
-- p: [10, 11]
+- p: [11, 12]
   k: ↹
 - p: [17, 16]
   k: Alt

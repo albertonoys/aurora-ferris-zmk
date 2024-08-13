@@ -21,13 +21,13 @@
 
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <0 1>;
+            key-positions = <1 2>;
             bindings = <&kp ESC>;
         };
 
         combo_tab {
             timeout-ms = <50>;
-            key-positions = <10 11>;
+            key-positions = <11 12>;
             bindings = <&kp TAB>;
         };
 
@@ -61,7 +61,7 @@
 
         home {
             bindings = <
-&kp Q      &kp W       &kp F       &kp P        &kp B    &kp J  &kp L        &kp U           &kp O            &kp SQT
+&kp Q      &kp W       &kp F       &kp P        &kp B    &kp J  &kp L        &kp U           &kp Y            &kp SQT
 &kp A      &kp R       &kp S       &kp T        &kp G    &kp M  &kp N        &kp E           &kp I            &kp O
 &kp Z      &mt LALT X  &mt LGUI C  &mt LCTRL D  &kp V    &kp K  &mt LCTRL H  &mt LGUI COMMA  &mt LALT PERIOD  &mt SLASH RET
 &lt 1 TAB  &lt 1 BSPC                                                                        &mt LSHFT SPACE  &to 1
