@@ -71,56 +71,56 @@ layers:
   - ␣
   - {t: '0', type: held}
   nav:
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
+  - Esc
+  - F1
+  - F2
+  - F3
+  - F4
+  - PRINTSCREEN
+  - PAGE DOWN
+  - PAGE UP
+  - CAPSLOCK
+  - Sft+Ctl+ 1
   - Ctl+ C
-  - Ctrl
-  - '"'
-  - '|'
-  - '#'
+  - F5
+  - F6
+  - F7
+  - F8
   - ←
   - ↓
   - ↑
   - →
-  - ⌦
+  - Sft+Ctl+ 2
   - Ctl+ Esc
-  - '~'
-  - \
-  - '#'
-  - '~'
-  - '-'
-  - '`'
-  - '['
-  - ']'
-  - ⌦
+  - F9
+  - F10
+  - F11
+  - F12
+  - Sft+Ctl+ ←
+  - Meh+ ↓
+  - Meh+ ↑
+  - Sft+Ctl+ →
+  - Sft+Ctl+ 3
   - {t: home, h: toggle, type: held}
   - BACKSPACE
   - ␣
   - {t: extra, h: toggle}
   extra:
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - '&rgb_tog'
   - RGB EFF
   - RGB EFR
   - ''
   - '&bl BL_TOG'
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - RGB HUI
   - RGB SAI
   - RGB BRI
@@ -130,7 +130,7 @@ layers:
   - BT NXT
   - BT PRV
   - ''
-  - F7
+  - ''
   - RGB HUD
   - RGB SAD
   - RGB BRD

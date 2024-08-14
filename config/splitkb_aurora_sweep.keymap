@@ -90,19 +90,19 @@
 
         nav {
             bindings = <
-&kp N1       &kp N2         &kp N3                &kp N4           &kp N5        &kp N6     &kp N7     &kp N8            &kp N9             &kp N0
-&kp LC(C)    &kp LCTRL      &kp DOUBLE_QUOTES     &kp PIPE         &kp HASH      &kp LEFT   &kp DOWN   &kp UP            &kp RIGHT          &kp DEL
-&kp LC(ESC)  &kp TILDE      &kp NON_US_BACKSLASH  &kp NON_US_HASH  &kp TILDE2    &kp MINUS  &kp GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DEL
-&to 0        &kp BACKSPACE                                                                                               &kp SPACE          &to 3
+&kp ESC      &kp F1         &kp F2   &kp F3   &kp F4     &kp PRINTSCREEN   &kp PAGE_DOWN         &kp PAGE_UP         &kp CAPSLOCK       &kp LS(LC(NUMBER_1))
+&kp LC(C)    &kp F5         &kp F6   &kp F7   &kp F8     &kp LEFT          &kp DOWN              &kp UP              &kp RIGHT          &kp LS(LC(N2))
+&kp LC(ESC)  &kp F9         &kp F10  &kp F11  &kp F12    &kp LS(LC(LEFT))  &kp LS(LA(LC(DOWN)))  &kp LS(LA(LC(UP)))  &kp LS(LC(RIGHT))  &kp LS(LC(NUMBER_3))
+&to 0        &kp BACKSPACE                                                                                           &kp SPACE          &to 3
             >;
         };
 
         extra {
             bindings = <
-&kp N1      &kp N2          &kp N3      &kp N4  &kp N5    &rgb_tog 0       &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &none            &bl BL_TOG
-&kp F1      &kp F2          &kp F3      &kp F4  &kp F5    &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &bl BL_INC
-&bt BT_CLR  &bt BT_NXT      &bt BT_PRV  &none   &kp F7    &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &bl BL_DEC
-&to 0       &rgb_ug RGB_ON                                                                                   &none            &none
+&none       &none           &none       &none  &none    &rgb_tog 0       &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &none            &bl BL_TOG
+&none       &none           &none       &none  &none    &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &bl BL_INC
+&bt BT_CLR  &bt BT_NXT      &bt BT_PRV  &none  &none    &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &bl BL_DEC
+&to 0       &rgb_ug RGB_ON                                                                                 &none            &none
             >;
         };
     };
