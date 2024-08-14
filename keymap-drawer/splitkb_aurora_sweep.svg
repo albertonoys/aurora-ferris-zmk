@@ -618,6 +618,7 @@ svg.keymap{font-size: 17px;}</style>
 </g>
 <g transform="translate(588, 46)" class="key keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 67%">CAPSL…</tspan></text>
 </g>
 <g transform="translate(644, 81)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
