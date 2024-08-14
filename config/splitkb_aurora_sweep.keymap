@@ -19,6 +19,17 @@
 };
 
 / {
+    behaviors {
+        layer_3_deactivate: layer_3_deactivate {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "LAYER_3_DEACTIVATE";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug_off>;
+        };
+    };
+};
+
+/ {
     combos {
         compatible = "zmk,combos";
 
@@ -56,6 +67,13 @@
             timeout-ms = <50>;
             key-positions = <17 18>;
             bindings = <&kp RGUI>;
+        };
+
+        combo_layer_3_deactivate {
+            timeout-ms = <50>;
+            key-positions = <>;
+            bindings = <&layer_3_deactivate>;
+            layers = <3>;
         };
     };
 
