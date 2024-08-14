@@ -18,20 +18,6 @@
     flavor = "tap-preferred";
 };
 
-&mo 3 {
-    exit-behavior = <&rgb_ug RGB_OFF>;
-};
-
-/ {
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        rgb_layer {
-            if-layers = <3>;
-            then-layer = <4>;
-        };
-    };
-};
-
 / {
     behaviors {
         rgb_tog: rgb_toggle {
@@ -119,9 +105,8 @@
 &kp N1      &kp N2      &kp N3      &kp N4  &kp N5    &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &none            &bl BL_TOG
 &kp F1      &kp F2      &kp F3      &kp F4  &kp F5    &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &bl BL_INC
 &bt BT_CLR  &bt BT_NXT  &bt BT_PRV  &none   &kp F7    &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &bl BL_DEC
-&to 0       &none                                                                                        &none            &none
+&to 0       &rgb_ug RGB_ON                                                                                &none            &none
             >;
-            sensor-bindings = <&rgb_ug RGB_ON>;
         };
     };
 };

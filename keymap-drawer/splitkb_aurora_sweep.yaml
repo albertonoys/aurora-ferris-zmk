@@ -137,7 +137,7 @@ layers:
   - RGB SPD
   - '&bl BL_DEC'
   - {t: home, h: toggle}
-  - ''
+  - RGB ON
   - ''
   - ''
 combos:
