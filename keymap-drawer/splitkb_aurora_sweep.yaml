@@ -111,7 +111,7 @@ layers:
   - '3'
   - '4'
   - '5'
-  - RGB TOG
+  - '&rgb_tog'
   - RGB EFF
   - RGB EFR
   - ''

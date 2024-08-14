@@ -22,15 +22,12 @@
     behaviors {
         rgb_tog: rgb_toggle {
             compatible = "zmk,behavior-toggle-layer";
-            label = "RGB_TOGGLE";
-            #binding-cells = <0>;
+            #binding-cells = <1>;
             bindings = <&rgb_ug RGB_TOG>;
         };
     };
-};
 
-/ {
-    combos {
+/  combos {
         compatible = "zmk,combos";
 
         combo_esc {
@@ -102,7 +99,7 @@
 
         extra {
             bindings = <
-&kp N1      &kp N2      &kp N3      &kp N4  &kp N5    &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &none            &bl BL_TOG
+&kp N1      &kp N2      &kp N3      &kp N4  &kp N5    &rgb_tog 0  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &none            &bl BL_TOG
 &kp F1      &kp F2      &kp F3      &kp F4  &kp F5    &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &bl BL_INC
 &bt BT_CLR  &bt BT_NXT  &bt BT_PRV  &none   &kp F7    &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &bl BL_DEC
 &to 0       &rgb_ug RGB_ON                                                                                &none            &none
