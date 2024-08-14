@@ -1,0 +1,155 @@
+layout: {qmk_keyboard: ferris_rotated}
+layers:
+  home:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ''''
+  - A
+  - R
+  - S
+  - T
+  - G
+  - M
+  - N
+  - E
+  - I
+  - O
+  - Z
+  - {t: X, h: Alt}
+  - {t: C, h: GUI}
+  - {t: D, h: Ctrl}
+  - V
+  - K
+  - {t: H, h: Ctrl}
+  - {t: ',', h: GUI}
+  - {t: ., h: Alt}
+  - {t: /, h: Sft+ -}
+  - {t: ↹, h: nav}
+  - ⌫
+  - {t: ␣, h: Shift}
+  - {t: ⮐, h: sym}
+  sym:
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - '#'
+  - '?'
+  - /
+  - ':'
+  - ;
+  - '-'
+  - '='
+  - '['
+  - ']'
+  - ⌫
+  - Shift
+  - +
+  - '{'
+  - '}'
+  - \
+  - _
+  - ←
+  - ↓
+  - ↑
+  - →
+  - {t: home, h: toggle}
+  - BACKSPACE
+  - ␣
+  - {t: '0', type: held}
+  nav:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - Ctl+ C
+  - Ctrl
+  - '"'
+  - '|'
+  - '#'
+  - ←
+  - ↓
+  - ↑
+  - →
+  - ⌦
+  - Ctl+ Esc
+  - '~'
+  - \
+  - '#'
+  - '~'
+  - '-'
+  - '`'
+  - '['
+  - ']'
+  - ⌦
+  - {t: home, h: toggle, type: held}
+  - BACKSPACE
+  - ␣
+  - {t: extra, h: toggle}
+  extra:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - RGB TOG
+  - RGB EFF
+  - RGB EFR
+  - ''
+  - '&bl BL_TOG'
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - RGB HUI
+  - RGB SAI
+  - RGB BRI
+  - RGB SPI
+  - '&bl BL_INC'
+  - BT CLR
+  - BT NXT
+  - BT PRV
+  - ''
+  - F7
+  - RGB HUD
+  - RGB SAD
+  - RGB BRD
+  - RGB SPD
+  - '&bl BL_DEC'
+  - {t: home, h: toggle}
+  - ''
+  - ''
+  - ''
+combos:
+- p: [1, 2]
+  k: Esc
+- p: [11, 12]
+  k: ↹
+- p: [17, 16]
+  k: Alt
+- p: [11, 12]
+  k: Alt
+- p: [12, 13]
+  k: GUI
+- p: [17, 18]
+  k: GUI

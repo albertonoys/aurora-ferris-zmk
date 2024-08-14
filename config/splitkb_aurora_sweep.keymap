@@ -18,13 +18,27 @@
     flavor = "tap-preferred";
 };
 
+&mo 3 {
+    exit-behavior = <&rgb_ug RGB_OFF>;
+};
+
+/ {
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        rgb_layer {
+            if-layers = <3>;
+            then-layer = <4>;
+        };
+    };
+};
+
 / {
     behaviors {
-        layer_3_deactivate: layer_3_deactivate {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "LAYER_3_DEACTIVATE";
-            #sensor-binding-cells = <0>;
-            bindings = <&rgb_ug_off>;
+        rgb_tog: rgb_toggle {
+            compatible = "zmk,behavior-toggle-layer";
+            label = "RGB_TOGGLE";
+            #binding-cells = <0>;
+            bindings = <&rgb_ug RGB_TOG>;
         };
     };
 };
@@ -68,13 +82,6 @@
             key-positions = <17 18>;
             bindings = <&kp RGUI>;
         };
-
-        combo_layer_3_deactivate {
-            timeout-ms = <50>;
-            key-positions = <>;
-            bindings = <&layer_3_deactivate>;
-            layers = <3>;
-        };
     };
 
     keymap {
@@ -114,6 +121,7 @@
 &bt BT_CLR  &bt BT_NXT  &bt BT_PRV  &none   &kp F7    &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &bl BL_DEC
 &to 0       &none                                                                                        &none            &none
             >;
+            sensor-bindings = <&rgb_ug RGB_ON>;
         };
     };
 };
