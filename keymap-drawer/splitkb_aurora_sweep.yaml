@@ -106,11 +106,11 @@ layers:
   - ␣
   - extra
   extra:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT 5
   - RGB TOG
   - RGB EFF
   - RGB EFR
@@ -130,14 +130,14 @@ layers:
   - BT NXT
   - BT PRV
   - ''
-  - ''
+  - BT CLR ALL
   - RGB HUD
   - RGB SAD
   - RGB BRD
   - RGB SPD
   - '&bl BL_DEC'
   - {t: home, h: toggle, type: held}
-  - RGB ON
+  - ''
   - ''
   - {type: held}
 combos:
