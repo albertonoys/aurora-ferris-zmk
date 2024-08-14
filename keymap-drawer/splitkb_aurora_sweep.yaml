@@ -66,10 +66,10 @@ layers:
   - ↓
   - ↑
   - →
-  - {t: home, h: toggle}
-  - Ctrl
+  - ↹
+  - BACKSPACE
   - ␣
-  - {t: nav, h: toggle, type: held}
+  - {t: '0', type: held}
   nav:
   - '1'
   - '2'
@@ -81,17 +81,17 @@ layers:
   - '8'
   - '9'
   - '0'
-  - ↹
+  - Ctl+ C
   - Ctrl
   - '"'
   - '|'
   - '#'
-  - '-'
-  - '='
-  - '['
-  - ']'
+  - ←
+  - ↓
+  - ↑
+  - →
   - ⌦
-  - Esc
+  - Ctl+ Esc
   - '~'
   - \
   - '#'
@@ -101,9 +101,9 @@ layers:
   - '['
   - ']'
   - ⌦
-  - {t: home, h: toggle, type: held}
-  - GUI
-  - GUI
+  - {type: held}
+  - BACKSPACE
+  - ␣
   - {t: extra, h: toggle}
   extra:
   - '1'
@@ -129,7 +129,7 @@ layers:
   - BT CLR
   - BT NXT
   - BT PRV
-  - {t: ▽, type: trans}
+  - ''
   - F7
   - RGB HUD
   - RGB SAD
@@ -138,7 +138,7 @@ layers:
   - '&bl BL_DEC'
   - {t: home, h: toggle}
   - ''
-  - {t: ▽, type: trans}
+  - ''
   - ''
 combos:
 - p: [1, 2]
