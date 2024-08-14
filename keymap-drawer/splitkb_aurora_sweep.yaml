@@ -32,7 +32,7 @@ layers:
   - {t: ., h: Alt}
   - {t: /, h: Sft+ -}
   - {t: ↹, h: nav}
-  - ⌫
+  - {t: BACKSPACE, h: sym}
   - {t: ␣, h: Shift}
   - {t: ⮐, h: sym}
   sym:
@@ -67,9 +67,9 @@ layers:
   - '3'
   - \
   - {t: home, h: toggle}
-  - BACKSPACE
+  - {t: BACKSPACE, type: held}
   - ␣
-  - {t: '0', type: held}
+  - '0'
   nav:
   - Esc
   - F1
@@ -104,7 +104,7 @@ layers:
   - {t: home, h: toggle, type: held}
   - BACKSPACE
   - ␣
-  - {t: extra, h: toggle}
+  - extra
   extra:
   - ''
   - ''
@@ -136,10 +136,10 @@ layers:
   - RGB BRD
   - RGB SPD
   - '&bl BL_DEC'
-  - {t: home, h: toggle}
+  - {t: home, h: toggle, type: held}
   - RGB ON
   - ''
-  - ''
+  - {type: held}
 combos:
 - p: [1, 2]
   k: Esc

@@ -64,10 +64,10 @@
 
         home {
             bindings = <
-&kp Q      &kp W       &kp F       &kp P        &kp B    &kp J  &kp L        &kp U           &kp Y            &kp SQT
-&kp A      &kp R       &kp S       &kp T        &kp G    &kp M  &kp N        &kp E           &kp I            &kp O
-&kp Z      &mt LALT X  &mt LGUI C  &mt LCTRL D  &kp V    &kp K  &mt LCTRL H  &mt LGUI COMMA  &mt LALT PERIOD  &mt LS(MINUS) SLASH
-&lt 2 TAB  &kp BSPC                                                                          &mt LSHFT SPACE  &lt 1 RET
+&kp Q      &kp W            &kp F       &kp P        &kp B    &kp J  &kp L        &kp U           &kp Y            &kp SQT
+&kp A      &kp R            &kp S       &kp T        &kp G    &kp M  &kp N        &kp E           &kp I            &kp O
+&kp Z      &mt LALT X       &mt LGUI C  &mt LCTRL D  &kp V    &kp K  &mt LCTRL H  &mt LGUI COMMA  &mt LALT PERIOD  &mt LS(MINUS) SLASH
+&lt 2 TAB  &lt 1 BACKSPACE                                                                        &mt LSHFT SPACE  &lt 1 RET
             >;
         };
 
@@ -85,7 +85,7 @@
 &kp ESC      &kp F1         &kp F2   &kp F3   &kp F4     &kp PRINTSCREEN   &kp PAGE_DOWN         &kp PAGE_UP         &kp CAPSLOCK       &kp LS(LC(NUMBER_1))
 &kp LC(C)    &kp F5         &kp F6   &kp F7   &kp F8     &kp LEFT          &kp DOWN              &kp UP              &kp RIGHT          &kp LS(LC(N2))
 &kp LC(ESC)  &kp F9         &kp F10  &kp F11  &kp F12    &kp LS(LC(LEFT))  &kp LS(LA(LC(DOWN)))  &kp LS(LA(LC(UP)))  &kp LS(LC(RIGHT))  &kp LS(LC(NUMBER_3))
-&to 0        &kp BACKSPACE                                                                                           &kp SPACE          &to 3
+&to 0        &kp BACKSPACE                                                                                           &kp SPACE          &mo 3
             >;
         };
 
