@@ -64,10 +64,10 @@
 
         home {
             bindings = <
-&kp Q      &kp W       &kp F       &kp P        &kp B    &kp J  &kp L        &kp U           &kp Y            &kp SQT
-&kp A      &kp R       &kp S       &kp T        &kp G    &kp M  &kp N        &kp E           &kp I            &kp O
-&kp Z      &mt LALT X  &mt LGUI C  &mt LCTRL D  &kp V    &kp K  &mt LCTRL H  &mt LGUI COMMA  &mt LALT PERIOD  &mt SLASH RET
-&lt 1 TAB  &lt 1 BSPC                                                                        &mt LSHFT SPACE  &to 1
+&kp Q  &kp W       &kp F       &kp P        &kp B    &kp J  &kp L        &kp U           &kp Y            &kp SQT
+&kp A  &kp R       &kp S       &kp T        &kp G    &kp M  &kp N        &kp E           &kp I            &kp O
+&kp Z  &mt LALT X  &mt LGUI C  &mt LCTRL D  &kp V    &kp K  &mt LCTRL H  &mt LGUI COMMA  &mt LALT PERIOD  &mt LS(MINUS) SLASH
+&mo 2  &kp BSPC                                                                          &mt LSHFT SPACE  &lt 1 RET
             >;
         };
 
@@ -91,10 +91,10 @@
 
         extra {
             bindings = <
-&kp N1      &kp N2      &kp N3      &kp N4  &kp N5    &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &trans           &bl BL_TOG
+&kp N1      &kp N2      &kp N3      &kp N4  &kp N5    &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &none            &bl BL_TOG
 &kp F1      &kp F2      &kp F3      &kp F4  &kp F5    &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &bl BL_INC
 &bt BT_CLR  &bt BT_NXT  &bt BT_PRV  &trans  &kp F7    &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &bl BL_DEC
-&to 0       &trans                                                                                       &trans           &trans
+&to 0       &none                                                                                        &trans           &none
             >;
         };
     };

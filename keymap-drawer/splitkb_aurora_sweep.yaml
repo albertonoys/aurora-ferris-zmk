@@ -30,11 +30,11 @@ layers:
   - {t: H, h: Ctrl}
   - {t: ',', h: GUI}
   - {t: ., h: Alt}
-  - {t: ⮐, h: /}
-  - {t: ↹, h: sym}
-  - {t: ⌫, h: sym}
+  - {t: /, h: Sft+ -}
+  - nav
+  - ⌫
   - {t: ␣, h: Shift}
-  - {t: sym, h: toggle}
+  - {t: ⮐, h: sym}
   sym:
   - '!'
   - '@'
@@ -66,10 +66,10 @@ layers:
   - ↓
   - ↑
   - →
-  - {t: home, h: toggle, type: held}
+  - {t: home, h: toggle}
   - Ctrl
   - ␣
-  - {t: nav, h: toggle}
+  - {t: nav, h: toggle, type: held}
   nav:
   - '1'
   - '2'
@@ -101,7 +101,7 @@ layers:
   - '['
   - ']'
   - ⌦
-  - {t: home, h: toggle}
+  - {t: home, h: toggle, type: held}
   - GUI
   - GUI
   - {t: extra, h: toggle}
@@ -114,7 +114,7 @@ layers:
   - RGB TOG
   - RGB EFF
   - RGB EFR
-  - {t: ▽, type: trans}
+  - ''
   - '&bl BL_TOG'
   - F1
   - F2
@@ -137,9 +137,9 @@ layers:
   - RGB SPD
   - '&bl BL_DEC'
   - {t: home, h: toggle}
+  - ''
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
 combos:
 - p: [1, 2]
   k: Esc

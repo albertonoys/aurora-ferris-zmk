@@ -255,21 +255,18 @@ svg.keymap{font-size: 17px;}</style>
 </g>
 <g transform="translate(644, 193)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="-4" class="key tap">⮐</text>
-<text x="0" y="22" class="key hold">/</text>
+<text x="0" y="-4" class="key tap">/</text>
+<text x="0" y="22" class="key hold"><tspan style="font-size: 67%">Sft+ -</tspan></text>
 </g>
 <g transform="translate(221, 221) rotate(15.0)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="-4" class="key tap">↹</text>
-<a href="#sym">
-<text x="0" y="22" class="key hold layer-activator">sym</text>
+<a href="#nav">
+<text x="0" y="-4" class="key tap layer-activator">nav</text>
 </a></g>
 <g transform="translate(279, 245) rotate(30.0)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="-4" class="key tap">⌫</text>
-<a href="#sym">
-<text x="0" y="22" class="key hold layer-activator">sym</text>
-</a></g>
+</g>
 <g transform="translate(393, 245) rotate(-30.0)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="-4" class="key tap">␣</text>
@@ -277,10 +274,10 @@ svg.keymap{font-size: 17px;}</style>
 </g>
 <g transform="translate(451, 221) rotate(-15.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="-4" class="key tap">⮐</text>
 <a href="#sym">
-<text x="0" y="-4" class="key tap layer-activator">sym</text>
-</a><text x="0" y="22" class="key hold"><tspan style="font-size: 67%">toggle</tspan></text>
-</g>
+<text x="0" y="22" class="key hold layer-activator">sym</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 339)" class="layer-sym">
@@ -406,11 +403,11 @@ svg.keymap{font-size: 17px;}</style>
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="-4" class="key tap">→</text>
 </g>
-<g transform="translate(221, 221) rotate(15.0)" class="key held keypos-30">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
+<g transform="translate(221, 221) rotate(15.0)" class="key keypos-30">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <a href="#home">
-<text x="0" y="-4" class="key held tap layer-activator">home</text>
-</a><text x="0" y="22" class="key held hold"><tspan style="font-size: 67%">toggle</tspan></text>
+<text x="0" y="-4" class="key tap layer-activator">home</text>
+</a><text x="0" y="22" class="key hold"><tspan style="font-size: 67%">toggle</tspan></text>
 </g>
 <g transform="translate(279, 245) rotate(30.0)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -420,11 +417,11 @@ svg.keymap{font-size: 17px;}</style>
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="-4" class="key tap">␣</text>
 </g>
-<g transform="translate(451, 221) rotate(-15.0)" class="key keypos-33">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<g transform="translate(451, 221) rotate(-15.0)" class="key held keypos-33">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 <a href="#nav">
-<text x="0" y="-4" class="key tap layer-activator">nav</text>
-</a><text x="0" y="22" class="key hold"><tspan style="font-size: 67%">toggle</tspan></text>
+<text x="0" y="-4" class="key held tap layer-activator">nav</text>
+</a><text x="0" y="22" class="key held hold"><tspan style="font-size: 67%">toggle</tspan></text>
 </g>
 </g>
 </g>
@@ -551,11 +548,11 @@ svg.keymap{font-size: 17px;}</style>
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="-4" class="key tap">⌦</text>
 </g>
-<g transform="translate(221, 221) rotate(15.0)" class="key keypos-30">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<g transform="translate(221, 221) rotate(15.0)" class="key held keypos-30">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 <a href="#home">
-<text x="0" y="-4" class="key tap layer-activator">home</text>
-</a><text x="0" y="22" class="key hold"><tspan style="font-size: 67%">toggle</tspan></text>
+<text x="0" y="-4" class="key held tap layer-activator">home</text>
+</a><text x="0" y="22" class="key held hold"><tspan style="font-size: 67%">toggle</tspan></text>
 </g>
 <g transform="translate(279, 245) rotate(30.0)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -614,9 +611,8 @@ svg.keymap{font-size: 17px;}</style>
 <tspan x="0" dy="-0.6em">RGB</tspan><tspan x="0" dy="1.2em">EFR</tspan>
 </text>
 </g>
-<g transform="translate(588, 46)" class="key trans keypos-8">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="-4" class="key trans tap">▽</text>
+<g transform="translate(588, 46)" class="key keypos-8">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
 <g transform="translate(644, 81)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -736,17 +732,15 @@ svg.keymap{font-size: 17px;}</style>
 <text x="0" y="-4" class="key tap layer-activator">home</text>
 </a><text x="0" y="22" class="key hold"><tspan style="font-size: 67%">toggle</tspan></text>
 </g>
-<g transform="translate(279, 245) rotate(30.0)" class="key trans keypos-31">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="-4" class="key trans tap">▽</text>
+<g transform="translate(279, 245) rotate(30.0)" class="key keypos-31">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
 <g transform="translate(393, 245) rotate(-30.0)" class="key trans keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="-4" class="key trans tap">▽</text>
 </g>
-<g transform="translate(451, 221) rotate(-15.0)" class="key trans keypos-33">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="-4" class="key trans tap">▽</text>
+<g transform="translate(451, 221) rotate(-15.0)" class="key keypos-33">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
 </g>
 </g>
