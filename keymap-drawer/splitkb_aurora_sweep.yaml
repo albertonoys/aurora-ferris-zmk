@@ -31,7 +31,7 @@ layers:
   - {t: ',', h: GUI}
   - {t: ., h: Alt}
   - {t: /, h: Sft+ -}
-  - nav
+  - {t: ↹, h: nav}
   - ⌫
   - {t: ␣, h: Shift}
   - {t: ⮐, h: sym}
@@ -66,7 +66,7 @@ layers:
   - ↓
   - ↑
   - →
-  - ↹
+  - {t: home, h: toggle}
   - BACKSPACE
   - ␣
   - {t: '0', type: held}
@@ -101,7 +101,7 @@ layers:
   - '['
   - ']'
   - ⌦
-  - {type: held}
+  - {t: home, h: toggle, type: held}
   - BACKSPACE
   - ␣
   - {t: extra, h: toggle}

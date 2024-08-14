@@ -64,10 +64,10 @@
 
         home {
             bindings = <
-&kp Q  &kp W       &kp F       &kp P        &kp B    &kp J  &kp L        &kp U           &kp Y            &kp SQT
-&kp A  &kp R       &kp S       &kp T        &kp G    &kp M  &kp N        &kp E           &kp I            &kp O
-&kp Z  &mt LALT X  &mt LGUI C  &mt LCTRL D  &kp V    &kp K  &mt LCTRL H  &mt LGUI COMMA  &mt LALT PERIOD  &mt LS(MINUS) SLASH
-&mo 2  &kp BSPC                                                                          &mt LSHFT SPACE  &lt 1 RET
+&kp Q      &kp W       &kp F       &kp P        &kp B    &kp J  &kp L        &kp U           &kp Y            &kp SQT
+&kp A      &kp R       &kp S       &kp T        &kp G    &kp M  &kp N        &kp E           &kp I            &kp O
+&kp Z      &mt LALT X  &mt LGUI C  &mt LCTRL D  &kp V    &kp K  &mt LCTRL H  &mt LGUI COMMA  &mt LALT PERIOD  &mt LS(MINUS) SLASH
+&lt 2 TAB  &kp BSPC                                                                          &mt LSHFT SPACE  &lt 1 RET
             >;
         };
 
@@ -76,7 +76,7 @@
 &kp EXCL   &kp AT_SIGN    &kp HASH        &kp DOLLAR       &kp PERCENT      &kp CARET       &kp AMPERSAND  &kp ASTERISK      &kp LPAR           &kp RPAR
 &kp HASH   &kp QUESTION   &kp SLASH       &kp COLON        &kp SEMICOLON    &kp MINUS       &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BSPC
 &kp LSHFT  &kp PLUS       &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH    &kp UNDERSCORE  &kp LEFT       &kp DOWN          &kp UP             &kp RIGHT
-&kp TAB    &kp BACKSPACE                                                                                                     &kp SPACE          &kp NUMBER_0
+&to 0      &kp BACKSPACE                                                                                                     &kp SPACE          &kp NUMBER_0
             >;
         };
 
@@ -85,7 +85,7 @@
 &kp N1       &kp N2         &kp N3                &kp N4           &kp N5        &kp N6     &kp N7     &kp N8            &kp N9             &kp N0
 &kp LC(C)    &kp LCTRL      &kp DOUBLE_QUOTES     &kp PIPE         &kp HASH      &kp LEFT   &kp DOWN   &kp UP            &kp RIGHT          &kp DEL
 &kp LC(ESC)  &kp TILDE      &kp NON_US_BACKSLASH  &kp NON_US_HASH  &kp TILDE2    &kp MINUS  &kp GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DEL
-&trans       &kp BACKSPACE                                                                                               &kp SPACE          &to 3
+&to 0        &kp BACKSPACE                                                                                               &kp SPACE          &to 3
             >;
         };
 
