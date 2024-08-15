@@ -64,10 +64,10 @@
 
         home {
             bindings = <
-&kp Q      &kp W            &kp F       &kp P        &kp B    &kp J  &kp L        &kp U           &kp Y            &kp SQT
-&kp A      &kp R            &kp S       &kp T        &kp G    &kp M  &kp N        &kp E           &kp I            &kp O
-&kp Z      &mt LALT X       &mt LGUI C  &mt LCTRL D  &kp V    &kp K  &mt LCTRL H  &mt LGUI COMMA  &mt LALT PERIOD  &mt LS(MINUS) SLASH
-&lt 2 TAB  &lt 1 BACKSPACE                                                                        &mt LSHFT SPACE  &lt 1 RET
+&kp Q            &kp W            &kp F       &kp P        &kp B              &kp J  &kp L        &kp U           &kp Y            &kp SQT
+&kp A            &kp R            &kp S       &kp T        &rgb_ug RGB_BRD    &kp M  &kp N        &kp E           &kp I            &kp O
+&kp Z            &mt LALT X       &mt LGUI C  &mt LCTRL D  &rgb_ug RGB_BRI    &kp K  &mt LCTRL H  &mt LGUI COMMA  &mt LALT PERIOD  &mt LS(MINUS) SLASH
+&rgb_ug RGB_EFF  &rgb_ug RGB_TOG                                                                                  &mt LSHFT SPACE  &lt 1 RET
             >;
         };
 
