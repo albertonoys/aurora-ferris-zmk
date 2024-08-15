@@ -15,7 +15,7 @@ layers:
   - R
   - S
   - T
-  - RGB BRD
+  - G
   - M
   - N
   - E
@@ -25,14 +25,14 @@ layers:
   - {t: X, h: Alt}
   - {t: C, h: GUI}
   - {t: D, h: Ctrl}
-  - RGB BRI
+  - V
   - K
   - {t: H, h: Ctrl}
   - {t: ',', h: GUI}
   - {t: ., h: Alt}
   - {t: /, h: Sft+ -}
-  - RGB EFF
-  - RGB TOG
+  - {t: ↹, h: nav}
+  - {t: BACKSPACE, h: sym}
   - {t: ␣, h: Shift}
   - {t: ⮐, h: sym}
   sym:
@@ -67,9 +67,9 @@ layers:
   - '3'
   - \
   - {t: home, h: toggle}
-  - BACKSPACE
+  - {t: BACKSPACE, type: held}
   - ␣
-  - {t: '0', type: held}
+  - '0'
   nav:
   - Esc
   - F1
@@ -101,7 +101,7 @@ layers:
   - Meh+ ↑
   - Sft+Ctl+ →
   - Sft+Ctl+ 3
-  - {t: home, h: toggle}
+  - {t: home, h: toggle, type: held}
   - BACKSPACE
   - ␣
   - extra
@@ -136,7 +136,7 @@ layers:
   - RGB BRD
   - RGB SPD
   - '&bl BL_DEC'
-  - {t: home, h: toggle}
+  - {t: home, h: toggle, type: held}
   - ''
   - ''
   - {type: held}
