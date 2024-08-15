@@ -32,8 +32,6 @@ else
 fi
 
 FIRMWARE_ZIP="$HOME/Downloads/firmware.zip"
-LEFT_FIRMWARE="splitkb_aurora_sweep_left-nice_nano_v2-zmk.uf2"
-RIGHT_FIRMWARE="splitkb_aurora_sweep_right-nice_nano_v2-zmk.uf2"
 
 # Check if firmware .zip exists
 if [ ! -f "$FIRMWARE_ZIP" ]; then
@@ -73,6 +71,12 @@ copy_firmware() {
     local firmware=$1
     local half=$2
     local error_output
+
+    if ! gum confirm "Do you want to flash $firmware to the $half half?"; then
+        gum style --foreground 212 "Skipping $half half firmware update"
+        return
+    fi
+
     error_output=$(gum spin --spinner dot --title "Copying $half half firmware..." -- bash -c "
         unzip -p '$FIRMWARE_ZIP' '$firmware' > '$MOUNT_POINT/$firmware' 2>&1
     ")
@@ -85,6 +89,17 @@ copy_firmware() {
     fi
 }
 
+# Function to find firmware file
+find_firmware() {
+    local side=$1
+    local firmware=$(unzip -l "$FIRMWARE_ZIP" | grep "$side" | grep "\.uf2" | awk '{print $4}')
+    if [ -z "$firmware" ]; then
+        gum style --foreground 196 "Error: No $side firmware found in $FIRMWARE_ZIP"
+        exit 1
+    fi
+    echo "$firmware"
+}
+
 # Main process
 gum style \
     --border normal \
@@ -92,6 +107,10 @@ gum style \
     --padding "1" \
     --border-foreground 212 \
     "Split keyboard firmware updater"
+
+# Find left and right firmware files
+LEFT_FIRMWARE=$(find_firmware "left")
+RIGHT_FIRMWARE=$(find_firmware "right")
 
 # Wait for initial mount
 wait_for_mount "mount" "Waiting for left half to be mounted..."
