@@ -1,6 +1,36 @@
 #!/bin/bash
 
-MOUNT_POINT="/media/$USER/NICENANO"
+# Function to check if a command exists
+command_exists() {
+    command -v "$1" >/dev/null 2>&1
+}
+
+# Check for dependencies
+dependencies=("gum" "unzip")
+missing_deps=()
+
+for dep in "${dependencies[@]}"; do
+    if ! command_exists "$dep"; then
+        missing_deps+=("$dep")
+    fi
+done
+
+if [ ${#missing_deps[@]} -ne 0 ]; then
+    echo "Error: The following dependencies are missing:"
+    for dep in "${missing_deps[@]}"; do
+        echo "- $dep"
+    done
+    echo "Please install these dependencies and run the script again."
+    exit 1
+fi
+
+# Detect OS and set mount point
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    MOUNT_POINT="/Volumes/NICENANO"
+else
+    MOUNT_POINT="/media/$USER/NICENANO"
+fi
+
 FIRMWARE_ZIP="$HOME/Downloads/firmware.zip"
 LEFT_FIRMWARE="splitkb_aurora_sweep_left-nice_nano_v2-zmk.uf2"
 RIGHT_FIRMWARE="splitkb_aurora_sweep_right-nice_nano_v2-zmk.uf2"
@@ -15,7 +45,7 @@ fi
 wait_for_mount() {
     local action=$1
     local message=$2
-    local timeout=30
+    local timeout=60
     gum spin --spinner dot --title "$message" -- bash -c "
         start_time=\$(date +%s)
         while true; do
@@ -42,13 +72,15 @@ wait_for_mount() {
 copy_firmware() {
     local firmware=$1
     local half=$2
-    gum spin --spinner dot --title "Copying $half half firmware..." -- bash -c "
-        unzip -p '$FIRMWARE_ZIP' '$firmware' > '$MOUNT_POINT/$firmware'
-    "
+    local error_output
+    error_output=$(gum spin --spinner dot --title "Copying $half half firmware..." -- bash -c "
+        unzip -p '$FIRMWARE_ZIP' '$firmware' > '$MOUNT_POINT/$firmware' 2>&1
+    ")
     if [ $? -eq 0 ]; then
         gum style --foreground 212 "✓ Copied $firmware to $MOUNT_POINT"
     else
         gum style --foreground 196 "Error copying $firmware"
+        gum style --foreground 196 "Error details: $error_output"
         exit 1
     fi
 }
