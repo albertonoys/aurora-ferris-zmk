@@ -6,7 +6,7 @@ set -e
 REPO_DIR=$(pwd)
 CONFIG_PATH="config"
 OUTPUT_DIR="$REPO_DIR/builds"
-TIMESTAMP=$(date +'%Y%m%d_%H%M%S')
+TIMESTAMP=$(date -u +'%Y%m%d_%H%M%S')
 
 # Docker container and volume names
 CONTAINER_NAME="zmk-build-container"
@@ -16,13 +16,14 @@ VOLUME_NAME="zmk-build-volume"
 build_firmware() {
     local SHIELD=$1
     local HALF=$2
+    local BUILD_TIMESTAMP=$3
 
     west build -s zmk/app -d "build_${HALF}" -b nice_nano_v2 -- \
         -DZMK_CONFIG="${CONFIG_PATH}" \
         -DSHIELD="${SHIELD}"
 
     mkdir -p /tmp/zmk-out
-    cp "build_${HALF}/zephyr/zmk.uf2" "/tmp/zmk-out/${HALF}_half_${TIMESTAMP}.uf2"
+    cp "build_${HALF}/zephyr/zmk.uf2" "/tmp/zmk-out/${HALF}_half_${BUILD_TIMESTAMP}.uf2"
 }
 
 # Check if Docker is installed
@@ -70,8 +71,8 @@ docker exec -it $CONTAINER_NAME /bin/bash -c "
     west update
     west zephyr-export
     $(declare -f build_firmware)
-    build_firmware splitkb_aurora_sweep_left left
-    build_firmware splitkb_aurora_sweep_right right
+    build_firmware splitkb_aurora_sweep_left left '$TIMESTAMP'
+    build_firmware splitkb_aurora_sweep_right right '$TIMESTAMP'
 "
 
 # Copy the built firmware from the container to the host
