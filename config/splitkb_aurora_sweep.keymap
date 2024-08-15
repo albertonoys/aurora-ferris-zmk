@@ -18,6 +18,10 @@
     flavor = "tap-preferred";
 };
 
+&led_strip {
+    chain-length = <23>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
