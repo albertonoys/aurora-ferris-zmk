@@ -21,7 +21,10 @@ jobs:
 
     - name: West Init
       working-directory: ${{ env.base_dir }}
-      run: west init -l "${{ env.base_dir }}/${{ env.config_path }}"
+      run: |
+        if [ ! -d ".west" ]; then
+          west init -l "${{ env.base_dir }}/${{ env.config_path }}"
+        fi
 
     - name: West Update
       working-directory: ${{ env.base_dir }}
