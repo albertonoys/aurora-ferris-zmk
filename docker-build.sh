@@ -17,12 +17,12 @@ build_firmware() {
     local SHIELD=$1
     local HALF=$2
 
-    west build -s zmk/app -d "/workspace/build_${HALF}" -b nice_nano_v2 -- \
-        -DZMK_CONFIG="/workspace/${CONFIG_PATH}" \
+    west build -s zmk/app -d "build_${HALF}" -b nice_nano_v2 -- \
+        -DZMK_CONFIG="${CONFIG_PATH}" \
         -DSHIELD="${SHIELD}"
 
-    mkdir -p "$OUTPUT_DIR"
-    cp "/workspace/build_${HALF}/zephyr/zmk.uf2" "${OUTPUT_DIR}/${HALF}_half_${TIMESTAMP}.uf2"
+    mkdir -p /tmp/zmk-out
+    cp "build_${HALF}/zephyr/zmk.uf2" "/tmp/zmk-out/${HALF}_half_${TIMESTAMP}.uf2"
 }
 
 # Check if Docker is installed
@@ -63,8 +63,9 @@ esac
 
 # Run the build process in the container
 docker exec -it $CONTAINER_NAME /bin/bash -c "
-    if [ ! -d '/workspace/.west' ]; then
-        west init -l /workspace/${CONFIG_PATH}
+    cd /workspace
+    if [ ! -d '.west' ]; then
+        west init -l ${CONFIG_PATH}
     fi
     west update
     west zephyr-export
@@ -72,6 +73,11 @@ docker exec -it $CONTAINER_NAME /bin/bash -c "
     build_firmware splitkb_aurora_sweep_left left
     build_firmware splitkb_aurora_sweep_right right
 "
+
+# Copy the built firmware from the container to the host
+echo "Copying firmware files to host..."
+mkdir -p "$OUTPUT_DIR"
+docker cp $CONTAINER_NAME:/tmp/zmk-out/. "$OUTPUT_DIR"
 
 # Stop the container
 echo "Stopping ZMK build container..."
