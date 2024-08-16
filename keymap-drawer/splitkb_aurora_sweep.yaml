@@ -115,7 +115,7 @@ layers:
   - RGB EFF
   - RGB EFR
   - CAPSLOCK
-  - '&bl BL_TOG'
+  - ''
   - ''
   - ''
   - ''
@@ -125,18 +125,18 @@ layers:
   - RGB SAI
   - RGB BRI
   - RGB SPI
-  - '&bl BL_INC'
+  - ''
   - BT CLR
-  - BT NXT
   - BT PRV
+  - BT NXT
   - ''
   - BT CLR ALL
   - RGB HUD
   - RGB SAD
   - RGB BRD
   - RGB SPD
-  - '&bl BL_DEC'
-  - {t: home, h: toggle, type: held}
+  - ''
+  - {type: held}
   - ''
   - ''
   - {type: held}
