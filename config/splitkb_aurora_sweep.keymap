@@ -58,9 +58,9 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand HRMs
 
 MAKE_HRM(hm_lshf, &kp LSHFT, &kp, KEYS_R THUMBS)  // left-hand shift HRM
 MAKE_HRM(hm_rshf, &kp RSHFT, &kp, KEYS_L THUMBS)  // right-hand shift HRM
-MAKE_HRM(hm_alt, &kp LALT, &kp, KEYS_R THUMBS)     // left-hand alt HRM
-MAKE_HRM(hm_gui, &kp LGUI, &kp, KEYS_R THUMBS)     // left-hand gui HRM
-MAKE_HRM(hm_ctl, &kp LCTRL, &kp, KEYS_R THUMBS)    // left-hand ctrl HRM
+MAKE_HRM(hm_alt,  &kp LALT,  &kp, KEYS_R THUMBS)  // left-hand alt HRM
+MAKE_HRM(hm_gui,  &kp LGUI,  &kp, KEYS_R THUMBS)  // left-hand gui HRM
+MAKE_HRM(hm_ctl,  &kp LCTRL, &kp, KEYS_R THUMBS)  // left-hand ctrl HRM
 
 /* Custom behaviors */
 
