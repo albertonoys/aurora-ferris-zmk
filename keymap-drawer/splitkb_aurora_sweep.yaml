@@ -33,7 +33,7 @@ layers:
   - {t: '?', s: '!'}
   - {t: ↹, h: nav}
   - {t: ⌫, s: ⌦}
-  - '&lt_spc 2'
+  - {t: ␣, h: nav, s: '&dot_spc'}
   - {t: ⮐, h: sym}
   sym:
   - '!'
@@ -66,9 +66,9 @@ layers:
   - '2'
   - '3'
   - '0'
-  - '&lt 3'
+  - {t: ↹, h: sys}
   - {t: ⌫, s: ⌦}
-  - '&lt_spc 3'
+  - {t: ␣, h: sys, s: '&dot_spc'}
   - {type: held}
   nav:
   - Esc
@@ -101,12 +101,45 @@ layers:
   - Meh+ ↑
   - Sft+Ctl+ →
   - Sft+Ctl+ 3
-  - {t: '&lt 3', type: held}
+  - {t: ↹, h: sys, type: held}
   - {t: ⌫, s: ⌦}
-  - '&lt_spc 3'
+  - {t: ␣, h: sys, s: '&dot_spc'}
   - ''
-  sys: [BT 1, BT 2, BT 3, BT 4, BT 5, RGB TOG, RGB EFF, RGB EFR, CAPSLOCK, '', '', '', '', '', '', RGB HUI, RGB SAI, RGB BRI, RGB SPI, '', BT CLR, BT PRV, BT NXT,
-    '', BT CLR ALL, RGB HUD, RGB SAD, RGB BRD, RGB SPD, '', '', '', '', '']
+  sys:
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT 5
+  - RGB TOG
+  - RGB EFF
+  - RGB EFR
+  - CAPSLOCK
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - RGB HUI
+  - RGB SAI
+  - RGB BRI
+  - RGB SPI
+  - ''
+  - BT CLR
+  - BT PRV
+  - BT NXT
+  - ''
+  - BT CLR ALL
+  - RGB HUD
+  - RGB SAD
+  - RGB BRD
+  - RGB SPD
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - {type: held}
 combos:
 - p: [1, 2]
   k: Esc
