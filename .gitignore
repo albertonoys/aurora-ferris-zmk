@@ -6,3 +6,4 @@ builds/*
 config/.config
 config/kconfig-reference.txt
 timeless-hrm.md
+config/combos.dtsi

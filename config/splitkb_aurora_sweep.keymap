@@ -4,7 +4,7 @@
 #include <dt-bindings/zmk/rgb.h>
 
 #include "zmk-helpers/helper.h"
-#include "zmk-helpers/key_labels_34.h"
+#include "zmk-helpers/key-labels/34.h"
 
 #define BASE 0
 #define SYM 1
@@ -119,7 +119,6 @@ ZMK_MOD_MORPH(bs_del,
 
 #define WRKSPC_DN &kp LS(LA(LC(DOWN)))
 #define WRKSPC_UP &kp LS(LA(LC(UP)))
-
 
 ZMK_LAYER(base,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
