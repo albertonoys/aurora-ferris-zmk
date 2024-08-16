@@ -56,12 +56,6 @@
 MAKE_HRM(hml, &kp, &kp, KEYS_R THUMBS)  // left-hand HRMs
 MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand HRMs
 
-MAKE_HRM(hm_lshf, &kp LSHFT, &kp, KEYS_R THUMBS)  // left-hand shift HRM
-MAKE_HRM(hm_rshf, &kp RSHFT, &kp, KEYS_L THUMBS)  // right-hand shift HRM
-MAKE_HRM(hm_alt,  &kp LALT,  &kp, KEYS_R THUMBS)  // left-hand alt HRM
-MAKE_HRM(hm_gui,  &kp LGUI,  &kp, KEYS_R THUMBS)  // left-hand gui HRM
-MAKE_HRM(hm_ctl,  &kp LCTRL, &kp, KEYS_R THUMBS)  // left-hand ctrl HRM
-
 /* Custom behaviors */
 
 // reuse basic mod-morph scheme
@@ -96,11 +90,11 @@ SIMPLE_MORPH(dot_inner_morph, CTL, &kp COLON, &kp GREATER_THAN)
 // tap: qmark | shift + tap: excl
 SIMPLE_MORPH(qexcl, SFT, &kp QMARK, &kp EXCL)
 
-// tap: copy | double-tap: cut
-ZMK_TAP_DANCE(copy_cut, tap_dance,
-    tapping-term-ms = <200>;
-    bindings = <&kp LC(INS)>, <&kp LC(X)>;
-)
+// // tap: copy | double-tap: cut
+// ZMK_TAP_DANCE(copy_cut, tap_dance,
+//     tapping-term-ms = <200>;
+//     bindings = <&kp LC(INS)>, <&kp LC(X)>;
+// )
 
 // tap: backspace | lshft + tap: delete | rshft + tap: shift-delete
 ZMK_MOD_MORPH(bs_del,
@@ -122,25 +116,25 @@ ZMK_MOD_MORPH(bs_del,
 
 ZMK_LAYER(base,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &kp Q         &kp W         &kp F         &kp P         &kp B           &kp J         &kp L         &kp U         &kp Y         &kp SQT       
+    &kp Q         &kp W         &kp F         &kp P         &kp B           &kp J         &kp L         &kp U         &kp Y         &kp SQT
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &hm_lshf A    &hm_alt R     &hm_gui S     &hm_ctl T     &kp G           &kp M         &hm_ctl N     &hm_gui  E    &hm_alt I     &hm_rshf O   
+    &hml LSHFT A    &hml LALT R     &hml LGUI S     &hml LCTRL T     &kp G           &kp M         &hmr LCTRL N     &hmr LGUI  E    &hmr LALT I &hmr RSHFT O
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp Z         &kp X         &kp C         &kp D         &kp V           &kp K         &kp H         &comma_morph  &dot_morph    &qexcl        
+    &kp Z         &kp X         &kp C         &kp D         &kp V           &kp K         &kp H         &comma_morph  &dot_morph    &qexcl
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                              &lt NAV TAB   &bs_del         &lt_spc NAV   &lt SYM RET                                              
+                                              &lt NAV TAB   &bs_del         &lt_spc NAV   &lt SYM RET
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
 
 ZMK_LAYER(sym,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &kp EXCL      &kp AT_SIGN &kp LEFT_BRACE &kp RIGHT_BRACE &kp PIPE       &kp PLUS      &kp N7        &kp N8        &kp N9        &kp ASTERISK       
+    &kp EXCL      &kp AT_SIGN &kp LEFT_BRACE &kp RIGHT_BRACE &kp PIPE       &kp PLUS      &kp N7        &kp N8        &kp N9        &kp ASTERISK
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &hm_lshf HASH &hm_alt DOLLAR &hm_gui LPAR &hm_ctl RPAR  &kp GRAVE       &kp MINUS     &hm_ctl N4    &hm_gui N5    &hm_alt N6    &hm_rshf SEMICOLON   
+    &hml LSHFT HASH &hml LALT DOLLAR &hml LGUI LPAR &hml LCTRL RPAR  &kp GRAVE  &kp MINUS &hmr LCTRL N4  &hmr LGUI N5    &hmr LALT N6    &hmr RSHFT SEMICOLON
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp PERCENT   &kp CARET   &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp TILDE  &kp EQUAL     &kp N1        &kp N2        &kp N3        &kp N0
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                              &lt SYS       &bs_del         &lt_spc SYS   XXX                                             
+                                              &lt SYS       &bs_del         &lt_spc SYS   XXX
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
 
@@ -148,11 +142,11 @@ ZMK_LAYER(nav,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &kp ESC       &kp F1         &kp F2       &kp F3        &kp F4        &kp PRINTSCREEN &kp PAGE_DOWN &kp PAGE_UP   &kp CAPSLOCK  MOVETO_1
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp LC(C)     &kp F5         &kp F6       &kp F7        &kp F8          &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     MOVETO_2  
+    &kp LC(C)     &kp F5         &kp F6       &kp F7        &kp F8          &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     MOVETO_2
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp LC(V)     &kp F9         &kp F10      &kp F11       &kp F12         TERM_LEFT     WRKSPC_DN     WRKSPC_UP     TERM_RIGHT    MOVETO_3
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                              &lt SYS       &bs_del         &lt_spc SYS   XXX                                             
+                                              &lt SYS       &bs_del         &lt_spc SYS   XXX
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
 
@@ -164,7 +158,7 @@ ZMK_LAYER(sys,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &bt BT_CLR    &bt BT_PRV    &bt BT_NXT        XXX      &bt BT_CLR_ALL &rgb_ug RGB_HUD &rgb_ug RGB_SAD &rgb_ug RGB_BRD &rgb_ug RGB_SPD  XXX
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                                  XXX           XXX            XXX            XXX                           
+                                                  XXX           XXX            XXX            XXX
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
 
