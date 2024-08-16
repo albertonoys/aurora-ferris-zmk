@@ -5,3 +5,4 @@ keymap-drawer/example_config.yaml
 builds/*
 config/.config
 config/kconfig-reference.txt
+timeless-hrm.md

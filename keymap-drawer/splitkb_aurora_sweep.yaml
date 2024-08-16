@@ -1,6 +1,6 @@
 layout: {qmk_keyboard: ferris_rotated}
 layers:
-  home:
+  base:
   - Q
   - W
   - F
@@ -11,29 +11,29 @@ layers:
   - U
   - Y
   - ''''
-  - A
-  - R
-  - S
-  - T
+  - '&hm_lshf A'
+  - '&hm_alt R'
+  - '&hm_gui S'
+  - '&hm_ctl T'
   - G
   - M
-  - N
-  - E
-  - I
-  - O
+  - '&hm_ctl N'
+  - '&hm_gui E'
+  - '&hm_alt I'
+  - '&hm_rshf O'
   - Z
-  - {t: X, h: Alt}
-  - {t: C, h: GUI}
-  - {t: D, h: Ctrl}
+  - X
+  - C
+  - D
   - V
   - K
-  - {t: H, h: Ctrl}
-  - {t: ',', h: GUI}
-  - {t: ., h: Alt}
-  - {t: /, h: Sft+ -}
+  - H
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
+  - {t: '?', s: '!'}
   - {t: ↹, h: nav}
-  - {t: BACKSPACE, h: sym}
-  - {t: ␣, h: Shift}
+  - {t: ⌫, s: ⌦}
+  - '&lt_spc 2'
   - {t: ⮐, h: sym}
   sym:
   - '!'
@@ -46,16 +46,16 @@ layers:
   - '8'
   - '9'
   - '*'
-  - '#'
-  - $
-  - (
-  - )
+  - '&hm_lshf HASH'
+  - '&hm_alt DOLLAR'
+  - '&hm_gui LPAR'
+  - '&hm_ctl RPAR'
   - '`'
   - '-'
-  - '4'
-  - '5'
-  - '6'
-  - ;
+  - '&hm_ctl N4'
+  - '&hm_gui N5'
+  - '&hm_alt N6'
+  - '&hm_rshf SEMICOLON'
   - '%'
   - ^
   - '['
@@ -65,11 +65,11 @@ layers:
   - '1'
   - '2'
   - '3'
-  - \
-  - {t: home, h: toggle}
-  - {t: BACKSPACE, type: held}
-  - ␣
   - '0'
+  - '&lt 3'
+  - {t: ⌫, s: ⌦}
+  - '&lt_spc 3'
+  - {type: held}
   nav:
   - Esc
   - F1
@@ -91,7 +91,7 @@ layers:
   - ↑
   - →
   - Sft+Ctl+ 2
-  - Ctl+ Esc
+  - Ctl+ V
   - F9
   - F10
   - F11
@@ -101,55 +101,13 @@ layers:
   - Meh+ ↑
   - Sft+Ctl+ →
   - Sft+Ctl+ 3
-  - {t: home, h: toggle, type: held}
-  - BACKSPACE
-  - ␣
-  - extra
-  extra:
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
-  - BT 5
-  - RGB TOG
-  - RGB EFF
-  - RGB EFR
-  - CAPSLOCK
+  - {t: '&lt 3', type: held}
+  - {t: ⌫, s: ⌦}
+  - '&lt_spc 3'
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - RGB HUI
-  - RGB SAI
-  - RGB BRI
-  - RGB SPI
-  - ''
-  - BT CLR
-  - BT PRV
-  - BT NXT
-  - ''
-  - BT CLR ALL
-  - RGB HUD
-  - RGB SAD
-  - RGB BRD
-  - RGB SPD
-  - ''
-  - {type: held}
-  - ''
-  - ''
-  - {type: held}
+  sys: [BT 1, BT 2, BT 3, BT 4, BT 5, RGB TOG, RGB EFF, RGB EFR, CAPSLOCK, '', '', '', '', '', '', RGB HUI, RGB SAI, RGB BRI, RGB SPI, '', BT CLR, BT PRV, BT NXT,
+    '', BT CLR ALL, RGB HUD, RGB SAD, RGB BRD, RGB SPD, '', '', '', '', '']
 combos:
 - p: [1, 2]
   k: Esc
-- p: [11, 12]
-  k: ↹
-- p: [17, 16]
-  k: Alt
-- p: [11, 12]
-  k: Alt
-- p: [12, 13]
-  k: GUI
-- p: [17, 18]
-  k: GUI
+  l: [base, sym, nav]
